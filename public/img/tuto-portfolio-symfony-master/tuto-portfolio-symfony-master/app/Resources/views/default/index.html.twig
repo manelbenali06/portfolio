@@ -1,0 +1,23 @@
+{% embed 'base.html.twig' with {'title': 'Affichage du projet : ' ~ project.title } %}
+
+    {% block body %}
+        <div id="wrapper">
+            <div id="container">.
+                <h1>{{ project.title }}</h1>
+                <img width="240" src="{{ project.imageUrl }}" alt="">
+                {% for category in project.categories %}
+                    <span>{{ category.name }} </span>
+                {% endfor %}
+                <div>
+                    <p>{{ project.description }}</p>
+                </div>
+                <p>{{ project.author.username | default('default user') }}</p>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block stylesheets %}
+
+    {% endblock %}
+
+{% endembed %}

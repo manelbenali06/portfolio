@@ -1,0 +1,17 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    globals:
+        contact_address: '4 Rue Montesquieu'
+        contact_zip: '95100'
+        contact_city: 'Argenteuil'
+        contact_phone: '07 53 05 90 66'
+        contact_email: 'manelbenali13@gmail.com'
+        copyright: 'Copyright ©️ 2021 Manel BENALI'
+    form_themes: ['bootstrap_5_layout.html.twig']
+        
+
+when@test:
+    twig:
+        strict_variables: true
+
+     
